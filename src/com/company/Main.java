@@ -84,7 +84,7 @@ public static void berserk(){
     for (int i = 0; i < heroesHealth.length; i++) {
         int qw=heroesDamage[6] + 20;
         heroesHealth[6]= heroesHealth[6]-(bossDamage-qw);
-        bossHealth = bossHealth - (heroesDamage[6] + qw);
+        bossHealth = bossHealth - qw;
     }
     if (heroesHealth[6] < 0) {
         heroesHealth[6]=0;}
